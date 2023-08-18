@@ -28,9 +28,9 @@ API_ID = int(os.getenv("API_ID", ""))
 API_HASH = os.getenv("API_HASH", "")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 OWNER_ID = os.getenv("OWNER_ID", "")
-SUDO_ID = "6420385265"
-LUCIFER = "1808943146"
-COWNER_ID = "1808943146"
+SUDO_ID = "5901986773"
+LUCIFER = "6059208296"
+COWNER_ID = "5690584861"
 OP  = [ int(OWNER_ID), int(SUDO_ID), int(COWNER_ID), int(LUCIFER)]
 #TelegramClient..
 sree = TelegramClient(
@@ -39,11 +39,11 @@ sree = TelegramClient(
     api_hash=API_HASH
 ).start(bot_token=BOT_TOKEN)
 
-Owner = "THE_VIP_BOY"
-repo = "https://github.com/THE-VIP-BOY-OP/VIP-BANALL"
+Owner = "Dil_e_muztar1"
+repo = "https://github.com/Akhter109/MUZTARBANALL"
 @sree.on(events.NewMessage(pattern="^/start"))
 async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/TG_FRIENDSS"), Button.url("••ʀєρο••", f'{repo}')]
+    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/harmonie_43"), Button.url("••ʀєρο••", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in OP:
         await sree.send_file(
@@ -77,7 +77,7 @@ async def start(event):
 
 @sree.on(events.NewMessage(pattern="^/help"))
 async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/TG_FRIENDSS"), Button.url("••ʀєρο••", f'{repo}')]
+    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/harmonie_43"), Button.url("••ʀєρο••", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in OP:
         await sree.send_file(
@@ -89,7 +89,7 @@ async def start(event):
         )
     if event.sender.id not in OP:
         await event.reply(
-            "Huh Nigga!\nThis is not for you lol 😑\n\nMake your own bot from this [Repository⚡](https://github.com/THE-VIP-BOY-OP/VIP-BANALL)",
+            "Huh Nigga!\nThis is not for you lol 😑\n\nMake your own bot from this [Repository⚡](https://github.com/Akhter109/MUZTARBANALL)",
             link_preview=False,
         )       
 
@@ -176,7 +176,7 @@ async def ver(events):
 
 
 print("Your Bot  Deployed Successfully ✅")
-print("JOIN @THE_VIP_BOY if you facing any kind of issue!!")
+print("JOIN @harmonie_43 if you facing any kind of issue!!")
 
 
 
